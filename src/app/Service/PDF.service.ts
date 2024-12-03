@@ -1,7 +1,10 @@
+import { Injectable } from '@angular/core';
 import jsPDF from 'jspdf';
-import jsPDF1 from 'jspdf-autotable';
 import autoTable from 'jspdf-autotable'
 
+@Injectable({
+  providedIn: 'root'
+})
 export class PdfService {
   constructor() {}
 
