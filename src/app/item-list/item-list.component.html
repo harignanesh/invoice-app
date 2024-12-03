@@ -1,0 +1,23 @@
+<table>
+    <thead>
+      <tr>
+        <th>S.No</th>
+        <th>Description</th>
+        <th>HSN/SAC</th>
+        <th>QTY</th>
+        <th>Price</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of invoice.items; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ item.description }}</td>
+        <td>{{ item.hsn }}</td>
+        <td>{{ item.qty }}</td>
+        <td>{{ item.price }}</td>
+        <td>{{ item.total }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
